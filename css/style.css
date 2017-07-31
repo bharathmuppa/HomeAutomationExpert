@@ -29,6 +29,13 @@ body.is-loading * {
     -ms-transition: none !important;
     transition: none !important;
 }
+.headermenuLang{
+    display:inline-block;
+    width:22%;
+    float:left;
+    margin-top:8px;
+    margin-right:10px;
+}
 
 body,
 input,
@@ -1581,7 +1588,7 @@ body {
     color: white;
     padding: 4em 0;
     text-align: center;
-   /* height: 100vh;*/
+    /* height: 100vh;*/
     /* background: #00afcc;*/
     background-attachment: fixed;
     background-color: #494d53;
@@ -1643,10 +1650,14 @@ body {
 
 .aboutSpan,
 .expertizeSpan {
-    font-size: 15px;
+    font-size: 1.1rem;
     font-family: serif;
     font-style: italic;
     color: #949494;
+}
+
+.blue {
+    color: #06c;
 }
 
 .aboutSpan {
@@ -1714,12 +1725,16 @@ body {
 
 /*new css after deployment*/
 
-
-@media only screen and (max-width: 320px)
-{
+@media only screen and (max-width: 320px) {
     .sponsors div {
-    width: 4rem;
-    height: 4rem;
-    margin: 1rem;
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem;
+    }
 }
+
+@media only screen and (max-width: 1000px) {
+    header.major p.quotedText1 {
+        font-size: 1.1rem;
+    }
 }
